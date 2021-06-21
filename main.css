@@ -1,0 +1,99 @@
+
+    *{
+      margin:0;
+      padding:0;
+    }
+    .nav{
+      width:1200px;
+      height:30px;
+      margin:0 auto;
+      background-color:#eee;
+    }
+    ul{
+      list-style:none;
+    }
+    ul li{
+      float:left;
+      line-height:30px;
+      text-align:center;
+      background-color: yellow;
+      position:relative;/*给一级菜单一个相对定位*/
+    }
+    a{
+      text-decoration:none;
+      color:#000;
+      display:block;
+      padding:0 10px;
+    }
+    a:hover{
+      color:floralwhite;
+      background-color:blue;
+    }
+    ul li ul{
+      position:absolute;/*给二级菜单一个绝对定位，防止一级菜单被二级菜单给撑开*/
+      left:0;
+      top:30px;
+      display:none;   /*先让二级菜单消失*/
+    }
+    ul li ul li{
+      float:none;/*因为二级菜单默认继承一级菜单的样式，所以我们需要取消浮动*/
+      background-color:#eee;
+      margin-top:2px;
+    }
+    /*单独设置二级菜单的样式*/
+    ul li ul li a:hover{
+      background-color:red;
+    }
+
+    span{
+      color: darkgray;
+      font-size: xx-large;
+      font-family: 华文行楷,serif;
+    }
+
+    .header{
+      margin:auto;
+      background-color: #408080;
+      height: 25px;
+      width: 100%;
+    }
+    .text{
+      color:#ffffff;
+    }
+    .header a{
+      display: block;
+      height: 25px;
+      width: 100px;
+      background-color: #7b4267;
+      text-decoration: none;
+      line-height: 25px;
+      text-align: center;
+      float: right;
+    }
+    .header a:hover{
+      background:#ff8080;
+    }
+
+    #content {
+      height: 250px;
+      width: 100%;
+      background-color: #FFf;
+    }
+    #content_left {
+      background-color: #0080ff;
+      height: 250px;
+      width: 400px;
+      float: left;
+    }
+    #content_mid {
+      background-color: #80ff80;
+      height: 250px;
+      width: 400px;
+      float: left;
+    }
+    #content_right {
+      background-color: #ff8080;
+      height: 250px;
+      width: 400px;
+      float: left;
+    }
